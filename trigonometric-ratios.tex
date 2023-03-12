@@ -1,0 +1,179 @@
+\chapter{Trigonometric Ratios}
+From Geometry, we know that an acute angle is an angle whose measure is between $0^\circ$ and $90^\circ$. Consider the following
+figure:
+\begin{center}
+  \begin{tikzpicture}
+    \draw (0, 0) -- (4, 0);
+    \draw (0, 0) -- (4, 4);
+    \draw (2, 2) -- (2, 0);
+    \draw (3, 3) -- (3, 0);
+    \draw [blue] (0,0) node[anchor=north east] {$O$};
+    \draw [blue] (2,0) node[anchor=north] {$M$};
+    \draw [blue] (3,0) node[anchor=north] {$M'$};
+    \draw [blue] (2,2) node[anchor=south east] {$P$};
+    \draw [blue] (3,3) node[anchor=south east] {$P'$};
+  \end{tikzpicture}
+\end{center}
+
+This picture contains two similar triangles $\triangle OMP$ and $\triangle OM'P'$. We are interested in $\angle MOP$ or $\angle
+M'OP'0$. In the $\triangle MOP$ and $\triangle M'OP', OP, OP'$ are called the hypotenuses i.e. sides opposite to the right angle,
+$PM, P'M'$ are called perpendiculars i.e. sides opposite to the angle of interest and $OM, OM'$ are called bases i.e. the third
+angle.
+
+Hypotenuses are usually denoted by $h$, perpendiculars by $p$ and bases by $b$. Let $OM = b, OM' = b', PM=p, P'M' = p', OP = h, OP'
+= h'$. Since the two triangles are similar $\therefore \frac{p}{p'} = \frac{b}{b'} = \frac{h}{h'}$. Thus rhe ratio of any two sides
+is dependent purely on $\angle O$ or $\angle MOP$ or $\angle M'OP'$.
+
+Since there are three sides, we can choose $2$ in ${}^3C_2$ i.e. $3$ ways and for each combination there will be two permutations
+where a side can be in either numerator or denominator. From this we can conclude that there will be six ratios(these are called
+trigonometric ratios), These six trigonometric ratios or functions are given below:
+
+$\dfrac{MP}{OP}$ or $\dfrac{p}{h}$ is called the {\bf Sine} of the $\angle MOP$.
+
+$\dfrac{OM}{OP}$ or $\dfrac{b}{h}$ is called the {\bf Cosine} of the $\angle MOP$.
+
+$\dfrac{MP}{OM}$ or $\dfrac{p}{b}$ is called the {\bf Tangent} of the $\angle MOP$.
+
+$\dfrac{OP}{MP}$ or $\dfrac{h}{p}$ is called the {\bf Cosecant} of the $\angle MOP$.
+
+$\dfrac{OP}{OM}$ or $\dfrac{h}{b}$ is called the {\bf Secant} of the $\angle MOP$.
+
+$\dfrac{OM}{MP}$ or $\dfrac{b}{p}$ is called the {\bf Cotangent} of the $\angle MOP$.
+
+$1 - \cos MOP$ is called the {\bf Versed Sine} of $\angle MOP$ and $1 - \sin MOP$ is called the {\bf Coversed Sine} of $\angle
+MOP$. These two are rarely used in trigonometry. It should be noted that the trigonometric ratios are all numbers. The name of the
+trigonometric ratios are written for brevity $\sin MOP, \cos MOP, \tan MOP, \cot MOP, \sec MOP, {\rm cosec}~MOP, {\rm vers}~MP,
+{\rm coverse}~MOP$.
+
+\section{Relationship betweeen Trigonometric Functions or Ratios}
+Let us represent the $\angle MOP$ with $\theta$, we observe from previous section that
+$$\sin\theta = \dfrac{1}{\csc\theta}, \cos\theta = \frac{1}{\sec\theta}, \tan\theta =
+\frac{1}{\cos\theta}, {\rm cosec}\theta = \frac{1}{\sin\theta}, \sec\theta = \frac{1}{\cos\theta}, \cot\theta =
+\frac{1}{\tan\theta}$$
+
+We also observe that $\tan\theta = \dfrac{\sin\theta}{\cos\theta}$ and $\cot\theta = \dfrac{\cos\theta}{\sin\theta}$
+
+From Pythagora theorem in geometry, we know that ${\rm hypotenuse}^2 = {\rm perpendicular}^2 + {\rm base}^2$ or $h^2 = p^2 + b^2$
+
+\begin{enumerate}
+\item Dividing both side by $h^2$, we get
+
+$$ \dfrac{p^2}{h^2} + \dfrac{b^2}{h^2} = 1$$
+$$ \sin^2\theta + \cos^2\theta = 1$$
+
+We can rewrite this as $\sin^2\theta = 1 - \cos^2\theta, \cos^2\theta = 1 - \sin^2\theta, \sin\theta = \sqrt{1 - \cos^2\theta},
+\cos\theta = \sqrt{1 - \sin^2\theta}$.
+
+\item If we divide both sides by $b^2$, then we get
+
+$$ \frac{h^2}{b^2} = \frac{p^2}{b^2} + 1 $$
+$$ \sec^2\theta = \tan^2\theta + 1$$
+
+We can rewrite this as $\sec^2\theta - \tan^2\theta = 1, \tan^\theta = \sec^2\theta - 1, \sec\theta = \sqrt{1 + \tan^2\theta},
+\tan\theta = \sqrt{sec^2\theta - 1}$
+
+\item Similalry, if we divide by $p^2$, then we get
+
+$$ \frac{h^2}{p^2} = 1 + \frac{b^2}{p^2}$$
+$$ {\rm cosec}^2\theta = 1 + \cos^2\theta$$
+
+We can rewrite this as ${\rm cosec}^2\theta - \cot^2\theta = 1, \cot^2\theta = {\rm cosec}^2\theta - 1, {\rm cosec}\theta = \sqrt{1 +
+\cot^2\theta}, \cot\theta = \sqrt{{\rm cosec}^2\theta - 1}$
+\end{enumerate}
+
+\section{Problems}
+Prove the following:
+
+\begin{enumerate}
+\item $\sqrt{\frac{1 - \cos A}{1 + \cos A}} = {\rm cosec} A - \cot A$.
+\item $\sqrt{\sec^2A + {\rm cosec}^2A} = \tan A + \cot A$.
+\item $({\rm cosec} A - \sin A)(\sec A - \cos A)(\tan A + \cot A) = 1$.
+\item $\cos^4 A - \sin^4 A + 1 = 2\cos^2 A$.
+\item $(\sin A + \cos A)(1 - \sin A\cos A) = \sin^3A + \cos^3A$.
+\item $\frac{\sin A}{1 + \cos A}+\frac{1 + \cos A}{\sin A} = 2{\rm cosec} A$.
+\item $\sin^6A - cos^6A = 1 - 3\cos^2A\sin^2A$.
+\item $\sqrt{\frac{1 - \sin A}{1 + \sin A}} = \sec A - \tan A$.
+\item $\frac{{\rm cosec} A}{{\rm cosec} A - 1} + \frac{{\rm cosec} A}{{\rm cosec} A + 1} = 2\sec^2 A$.
+\item $\frac{{\rm cosec} A}{\tan A + \cot A} = \cos A$.
+\item $(\sec A + \cos A)(\sec A - \cos A) = \tan^2 A + \sin^2A$.
+\item $\frac{1}{\tan A + \cot A} = \sin A\cos A$.
+\item $\frac{1 - \tan A}{1 + \tan A} = \frac{\cot A - 1}{\cot A + 1}$.
+\item $\frac{1 + \tan^2A}{1 + \cot^2A} = \frac{\sin^2A}{\cos^2A}$.
+\item $\frac{\sec A - \tan A}{\sec A + \tan A} = 1 - 2\sec A\tan A + 2\tan^2 A$.
+\item $\frac{1}{\sec A - \tan A} = \sec A + \tan A$.
+\item $\frac{\tan A}{1 - \cot A} + \frac{\cot A}{1 - \tan A} = \sec A{\rm cosec} A+ 1$.
+\item $\frac{\cos A}{1 - \tan A} + \frac{\sin A}{1 - \cot A} = \sin A + \cos A$.
+\item $(\sin A + \cos A)(\tan A + \cot A) = \sec A + {\rm cosec} A$.
+\item $\sec^4A - \sec^2A = \tan^4A + \tan^2A$.
+\item $\cot^4A + \cot^2A = {\rm cosec}^4A - {\rm cosec}^2A$.
+\item $\sqrt{{\rm cosec}^2A - 1} = \cos A{\rm cosec} A$.
+\item $\sec^2A{\rm cosec}^2A = \tan^2A + \cot^2A + 2$.
+\item $\tan^2A - \sin^2A = \sin^4A \sec^2A$.
+\item $(1 + \cot A - {\rm cosec} A)(1 + \tan A + \sec A) = 2$.
+\item $\frac{\cot A\cos A}{\cot A + \cos A} = \frac{\cot A - \cos A}{\cot A \cos A}$.
+\item $\frac{\cot A + \tan B}{\cot B + \tan A} = \cot A \tan B$.
+\item $\left(\frac{1}{\sec^2 A - \cos^2A} + \frac{1}{{\rm cosec}^2A - \sin^2A}\right)\cos^2A\sin^2A = \frac{1 - \cos^2A\sin^2A}{2 +
+    \cos^2A\sin^2A}$.
+\item $\sin^8A - \cos^8A = (\sin^2A - \cos^2A)(1 - 2\sin^2A\cos^2A)$.
+\item $\frac{\cos A{\rm cosec} A - \sin A\sec A}{\cos A + \sin A} = {\rm cosec} A - \sec A$.
+\item $\frac{1}{{\rm cosec} A - \cot A} - \frac{1}{\sin A} = \frac{1}{\sin A} - \frac{1}{{\rm cosec} A + \cot A}$.
+\item $\frac{\tan A + \sec A - 1}{\tan A - \sec A + 1} = \frac{1 + \sin A}{\cos A}$.
+\item $(\tan A + {\rm cosec} B)^2 - (\cot B - \sec A)^2 = 2\tan A\cot B({\rm cosec} A + \sec B)$.
+\item $2\sec^2 A - \sec^4A - 2{\rm cosec}^2A + {\rm cosec}^4A = \cot^4A - \tan^4A$.
+\item $(\sin A + {\rm cosec} A)^2 + (\cos A + \sec A)^2 = \tan^2A + \cot^2A + 7$.
+\item $({\rm cosec} A + \cot A)(1 - \sin A) - (\sec A + \tan A)(1 - \cos A) = ({\rm cosec} A - \sec A)[2 - (1 - \cos A)(1 - \sin A)]$.
+\item $(1 + \cot A + \tan A)(\sin A - \cos A) = \frac{\sec A}{{\rm cosec}^2A} - \frac{{\rm cosec} A}{\sec^2A}$.
+\item $\frac{1}{\sec A - \tan A} - \frac{1}{\cos A} = \frac{1}{\cos A} - \frac{1}{\sec A + \tan A}$.
+\item $3(\sin A - \cos A)^4 + 4(\sin^6 A + \cos^6 A) + 6(\sin A + \cos A)^2 = 13$.
+\item $\sqrt{\frac{1 + \cos A}{1 - \cos A}} = {\rm cosec} A + \cot A$.
+\item $\frac{\cos A}{1 + \sin A} + \frac{\cos A}{1 - \sin A} = 2\sec A$.
+\item $\frac{\tan A}{\sec A - 1} + \frac{\tan A}{\sec A + 1} = 2{\rm cosec} A$.
+\item $\frac{1}{1 - \sin A} - \frac{1}{1 + \sin A} = 2\sec A\tan A$.
+\item $\frac{1 + \tan^2 A}{1 + \cot^2 A} = \left(\frac{1 - \tan A}{1 - \cot A}\right)^2$.
+\item $1 + \frac{2\tan^2 A}{\cos^2 A} = \tan^4 A + sec^4 A$.
+\item $(1 - \sin A - \cos A)^2 = 2(1 - \sin A)(1 - \cos A)$.
+\item $\frac{\cot A + {\rm cosec} A - 1}{\cot A - {\rm cosec} A + 1} = \frac{1 + \cos A}{\sin A}$.
+\item $(\sin A + \sec A)^2 + (\cos A + {\rm cosec} A)^2 = (1 + \sec A{\rm cosec} A)^2$.
+\item $\frac{2\sin A\tan A(1 - \tan A) + 2\sin A\sec^2A}{(1 + \tan A)^2} = \frac{2\sin A}{1 + \tan A}$.
+\item If $2\sin A = 2 - \cos A,$ find $\sin A$.
+\item If $8\sin A = 4 + \cos A,$ find $\sin A$.
+\item If $\tan A + \sec A = 1.5,$ find $\sin A$.
+\item If $\cot A + {\rm cosec} A = 5,$ find $\cos A$.
+\item If $3\sec^4 A + 8 = 10\sec^2A,$ find the value of $\tan A$.
+\item If $\tan^2A + \sec A = 5,$ find $\cos A$.
+\item If $\tan A + \cot A = 2,$ find $\sin A$.
+\item If $\sec^2A = 2 + 2\tan A,$ find $\tan A$.
+\item If $\tan A = \frac{2x(x + 1)}{2x + 1},$ find $\sin A$ and $\cos A$.
+\item If $3\sin A + 5\cos A = 5,$ show that $5\sin A - 3\cos A = \pm 3$.
+\item If $\sec A + \tan A = \sec A - \tan A$ prove that each side is $\pm 1$.
+\item If $\frac{\cos^4 A}{\cos^2 B} + \frac{\sin^4 A}{\sin^2 B} = 1,$ prove that
+  \begin{enumerate}
+    \item $\sin^4A + \sin^4B = 2\sin^2A \sin^2B$,
+    \item $\frac{\cos^4 B}{\cos^2 A} + \frac{\sin^4 B}{\sin^2 A} = 1$.
+  \end{enumerate}
+\item If $\cos A + \sin A = \sqrt{2}\cos A,$ prove that $\cos A - \sin A = \pm \sqrt{2}\sin A$.
+\item If $a\cos A - b\sin A = c,$ prove that $a\sin A + b\cos A = \sqrt{a^2 + b ^2 - c^2}$.
+\item If $1 - \sin A = 1 + \sin A,$ then prove that value of each side is $\pm \cos A$.
+\item If $\sin^4 A + \sin^2 A = 1,$ prove that
+  \begin{enumerate}
+    \item $\frac{1}{\tan^4 A} + \frac{1}{\tan^2A} = 1$,
+    \item $\tan^4A - \tan^2 = 1$.
+  \end{enumerate}
+\item If $\cos^2A - \sin^2 A = \tan^2 B,$ prove that $2\cos^2B - 1 = \cos^2B - \sin^2B = \tan^2A$.
+\item If $\sin A + {\rm cosec} A = 2,$ then prove that $\sin^nA + {\rm cosec}^nA = 2$.
+\item If $\tan^2A = 1 - e^2$, prove that $\sec A + \tan^3A {\rm cosec}A = (2 - e^2)^{\frac{3}{2}}$.
+\item Eliminate $A$ between the equations $a\sec A + b\tan A + c = 0$ and $p\sec A + q\tan A + r = 0$.
+\item If ${\rm cosec} A - \sin A = m$ and $\sec A - \cos A = n,$ elimiate $A$.
+\item Is the equation $\sec^2 A = \frac{4xy}{(x + y)^2}$ possible for real values of $x$ and $y$?.
+\item Show that the equation $\sin A = x + \frac{1}{x}$ is imossible for real values of $x$.
+\item If $\sec A - \tan A = p, p\neq 0,$ find $\tan A, \sec A$ and $\sin A$.
+\item If $\sec A = p + \frac{1}{4p},$ show that $\sec A + \tan A = 2p$ or $\frac{1}{2p}$.
+\item If $\frac{\sin A}{\sin B} = p, \frac{\cos A}{\cos B} = q,$ find $\tan A$ and $\tan B$.
+\item If $\frac{\sin A}{\sin B} = \sqrt{2}, \frac{\tan A}{\tan B}= \sqrt{3},$ find $A$ and $B$.
+\item If $\tan A + \cot A = 2,$ find $\sin A$.
+\item If $m = \tan A + \sin A$ and $n = \tan A - \sin A,$ prove that $m^2 - n^2 = 4\sqrt{mn}$.
+\item If $\sin A + \cos A = m$ and $\sec A + {\rm cosec} A = n,$ prove that $n(m^2 - 1) = 2m$.
+\item If $x\sin^3 A + y\cos^3 A = \sin A\cos A$ and $x\sin A - y\cos A = 0,$ prove that $x^2 + y^2 = 1$.
+\item Prove that $\sin^2A = \frac{(x + y)^2}{4xy}$ is possible for real values of $x$ and $y$ only when $x =
+    y$ and $x,y \neq 0$.
+\end{enumerate}
