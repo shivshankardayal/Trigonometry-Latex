@@ -1,0 +1,34 @@
+settings.outformat = "png";
+defaultpen(fontsize(14pt));
+import geometry;
+
+size(8cm);
+
+pair a = (0,3);
+pair b = (-2,0);
+pair c = (2,0);
+triangle t = triangle(a,b,c);
+show(t, 0.5*green);
+pair i = incenter(t);
+draw(b -- i, 0.5*blue);
+pair h = midpoint(line(b, i));
+pair h = h + (.3, (i.y - b.y)/(i.x - b.x)*.3);
+line l = perpendicular(h, line(b, c));
+real r = distance(line(b, c), h);
+draw(circle(h, r), 0.5*blue);
+line m = perpendicular(i, line(a, b));
+draw(i -- intersectionpoint(m, line(a,b)), 0.5*blue);
+line n = perpendicular(i, line(c, b));
+pair p = intersectionpoint(n, line(b, c));
+draw(i -- p);
+line l1 = perpendicular(h, line(i, p));
+draw(h -- intersectionpoint(l1, line(i, p)), 0.5*blue);
+line m1 = perpendicular(h, line(b, c));
+draw(h -- intersectionpoint(m1, line(b, c)), 0.5*blue);
+label("$L$", intersectionpoint(l1, line(i, p)), align=E, 0.5*blue);
+label("$K$", intersectionpoint(m1, line(b, c)), align=S, 0.5*blue);
+label("$H$", h, align=NW, 0.5*blue);
+label("$I$", i, align=NE, 0.5*blue);
+label("$D$", intersectionpoint(n, line(b, c)), align=SE, 0.5*blue);
+markangle("$B/2$", radius=10, c, b, i, 0.5*blue);
+markangle("$B/2$", radius=10, intersectionpoint(l1, line(i, p)), h, i, 0.5*blue);

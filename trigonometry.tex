@@ -1,6 +1,6 @@
 \documentclass[9pt, oneside, b5paper, openright]{memoir}
 %\documentclass[9pt, twoside, openright, showtrims]{memoir}
-\usepackage[b5paper, total={5in, 7in}]{geometry}
+\usepackage[b5paper, total={5in, 7.8in}]{geometry}
 %\setstocksize{11in}{8in}
 %\settrimmedsize{9in}{8in}{*}
 %\settrims{0.7in}{0in}
@@ -23,12 +23,12 @@
 \makeatother
 
 % \usepackage{xcolor, calc, graphicx, soul, fourier, verbments, makeidx, mflogo}
-\usepackage{xcolor, calc, graphicx, soul, float, makeidx,
+\usepackage{xcolor, calc, graphicx, soul, float, makeidx, pgfplots,
   minitoc, amsmath, amssymb, longtable, tikz, titlesec,
   scalerel, stackengine, microtype, enumitem, wrapfig, mathtools, amsthm, pdfpages}
 % make minimum size of math font bigger for fractions it makes fractions displaystyle
 \let\frac\dfrac
-\usetikzlibrary{shapes, arrows, calc}
+\usetikzlibrary{shapes, arrows, calc, patterns,angles,quotes,intersections,positioning,decorations.markings}
 \graphicspath{ {./images/} }
 % symbol for old factorial
 \newcommand{\oldfact}[1]{%
@@ -37,6 +37,13 @@
 \newtheorem{theorem}{Theorem}[section]
 \newtheorem{corollary}{Corollary}[theorem]
 \newtheorem{lemma}[theorem]{Lemma}
+
+\newcommand{\MarkRightAngle}[4][.2cm]% #1=size (optional), #2-#4 three points: \angle #2#3#4
+{\coordinate (tempa) at ($(#3)!#1!(#2)$);
+ \coordinate (tempb) at ($(#3)!#1!(#4)$);
+ \coordinate (tempc) at ($(tempa)!0.5!(tempb)$);%midpoint
+ \draw (tempa) -- ($(#3)!2!(tempc)$) -- (tempb);
+}
 
 % Define block styles
 \tikzstyle{decision} = [diamond, draw,
@@ -129,7 +136,7 @@
 \title{\sffamily\color{nicecyan}\HUGE{\textbf{A Variable in Algebra}}}
 \author{\vspace*{1cm}\LARGE{Shiv S. Dayal}}
 \date{}
-%\titlepic{\includegraphics{cover.pdf}}
+%\titlepic{\includegraphics{cover1.pdf}}
 \titleformat{\section}
   {\normalfont\sffamily\Large\bfseries\color{nicecyan}}
   {\thesection}{0.2em}{}
@@ -169,7 +176,7 @@
 \preto{\@verbatim}{\topsep=0pt \partopsep=0pt }
 \makeatother
 \begin{document}
-\includepdf[pages=1,fitpaper]{cover}
+\includepdf[pages=1,fitpaper]{cover1}
 \thispagestyle{empty}
 \pagestyle{empty}
 \vfill
@@ -220,6 +227,9 @@ in the section entitled ``GNU Free Documentation License''.
 \include{compound-angles}
 \include{transformation-formulae}
 \include{multiple-submultiple-angles}
+\include{trigonometric-identities}
+\include{properties-of-triangle}
+\include{inverse-circular-functions}
 \part{Solutions}
 \backmatter
 \include{fdl}
