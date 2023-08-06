@@ -49,11 +49,44 @@ Suppose we have to find the principal value of $\sin^{-1}\frac{1}{2}$. Let $\sin
 angles $\frac{\pi}{6}$ is the numerically smalles angles satisfying $\sin\theta = \frac{1}{2}$ and hence it is the principal value.
 
 \section{Important Formulae}
-\begin{enumerate}
-\item $\sin\sin^{-1}x = x, -1\leq x\leq 1$
-\item $\cos\cos^{-1}x = x, -1\leq x\leq 1$
-\item $\tan\tan^{-1}x = x, -\infty < x\leq\infty$
-\item $\cot\cot^{-1}x = x, -\infty < x\leq\infty$
-\item $\sec\sec^{-1}x = x, x\leq -1$ or $x\geq 1$
-\item ${\rm cosec~cosec}^{-1}x = x, x\leq -1$ or $x\geq 1$
-\end{enumerate}
+\begin{theorem}
+  \begin{enumerate}
+  \item $\sin\sin^{-1}x = x, -1\leq x\leq 1$
+  \item $\cos\cos^{-1}x = x, -1\leq x\leq 1$
+  \item $\tan\tan^{-1}x = x, -\infty < x\leq\infty$
+  \item $\cot\cot^{-1}x = x, -\infty < x\leq\infty$
+  \item $\sec\sec^{-1}x = x, x\leq -1$ or $x\geq 1$
+  \item ${\rm cosec~cosec}^{-1}x = x, x\leq -1$ or $x\geq 1$
+  \end{enumerate}
+\end{theorem}
+
+\begin{proof}
+Let $\sin^{-1}x = \theta$ then $\sin\theta = x$. Putting the value of $\theta$ from first equation in second
+$\sin\sin^{-1}x = x$. Other formulae can be proved similarly.
+\end{proof}
+
+\begin{theorem}
+  \begin{enumerate}
+  \item $\sin^{-1}x + \cos^{-1}x = \frac{\pi}{2}~\forall -1\leq x\leq 1$
+  \item $\tan^{-1}x + \cot^{-1}x = \frac{\pi}{2}~\forall x\in\mathbb{R}$
+  \item $\sec^{-1}x + {\rm cosec}^{-1}x = \frac{\pi}{2}~\forall x\leq -1$ or $x\geq 1$
+  \end{enumerate}
+\end{theorem}
+
+\begin{proof}
+  Let $\sin^{-1}x = \theta$, then $\sin\theta = x \Rightarrow \cos\left(\frac{\pi}{2} - \theta\right) = x \Rightarrow \frac{\pi}{2}
+  - \theta = \cos^{-1}x$
+
+  $\Rightarrow \cos^{-1}x + \theta = \frac{\pi}{2} \Rightarrow \sin^{-1}x + \cos^{-1}x = \frac{\pi}{2}$.
+
+  Similarly other results can be proven.
+\end{proof}
+
+\begin{theorem}
+  \begin{enumerate}
+  \item $\sin^{-1}x = {\rm cosec}^{-1}\frac{1}{x}, -1\leq x\leq 1$
+  \item ${\rm cosec^{-1}x} = \sin^{-1}\frac{1}{x}, x\leq -1$ or $x > 1$
+  \item $\cos^{-1}x = \sec^{-1}\frac{1}{x}, -1\leq x\leq 1$
+  \item $\sec^{-1}x = \cos^{-1}\frac{1}{x}, x\leq -1$ or $x\geq 1$
+  \end{enumerate}
+\end{theorem}
